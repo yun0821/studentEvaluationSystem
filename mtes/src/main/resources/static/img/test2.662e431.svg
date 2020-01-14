@@ -1,0 +1,39 @@
+<svg width="1024" height="700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMinYMin meet" > 
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+
+ <symbol viewBox="-40 -40 81 81" id="StationTransformer">
+  <circle id="svg_4" stroke-width="2" fill-opacity="0" r="14" cy="-8" cx="0"/>
+  <circle id="svg_5" stroke-width="2" fill-opacity="0" r="14" cy="8" cx="0"/>
+ </symbol>
+ <symbol id="DrawoutDis_V_Close" viewBox="-40 -40 81 81">
+  <circle cx="0" cy="-29" r="1" fill-opacity="0" id="svg_11"/>
+  <path d="m0,-28l0,19m-7,-2l7,-7l7,7m-14,-5l7,-7l7,7" fill-opacity="0" id="svg_12"/>
+  <path d="m0,28l0,-19m-7,2l7,7l7,-7m-14,5l7,7l7,-7" fill-opacity="0" id="svg_13"/>
+  <path d="m0,9l0,-18" stroke-width="2" fill-opacity="0" id="svg_14"/>
+  <circle cx="0" cy="29" r="1" fill-opacity="0" id="svg_15"/>
+ </symbol>
+ <g>
+  <title></title>
+  <rect fill="#000000" id="canvas_background" height="702" width="1026" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title></title>
+  <line fill="none" stroke="#bf0000" stroke-width="2.5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="125" y1="75" x2="882" y2="76" id="svg_1"/>
+  <line fill="none" stroke="#bf0000" stroke-width="2.5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x1="1123" y1="285" x2="1122" y2="284" id="svg_2"/>
+  <use id="MID_1" stroke-width="1.11111" xlink:href="#StationTransformer" transform="matrix(0.12631916102726365,0,0,0.11825578746890741,290.41863316488286,137.30048512981372) " stroke="#00ff00" y="-342.84969" x="-1478.07822" stroke-linejoin="round" stroke-linecap="square" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  <line stroke="#ff0000" stroke-linecap="null" stroke-linejoin="null" id="svg_6" y2="112.55555" x2="169.3889" y1="75.44444" x1="168.72222" stroke-width="2" fill="none"/>
+  <use id="MID_2" stroke-width="1.11111" xlink:href="#StationTransformer" transform="matrix(0.12631916102726365,0,0,0.11825578746890741,290.41863316488286,137.30048512981372) " stroke="#00ff00" y="-323.77819" x="-585.20466" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  <line stroke="#ff0000" stroke-linecap="null" stroke-linejoin="null" id="svg_8" y2="113.73202" x2="278.80065" y1="76.62091" x1="278.13398" stroke-width="2" fill="none"/>
+  <use id="svg_9" stroke-width="1.11111" xlink:href="#StationTransformer" transform="matrix(0.12631916102726365,0,0,0.11825578746890741,290.41863316488286,137.30048512981372) " stroke="#00ff00" y="-344.00686" x="512.07808" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  <line stroke="#ff0000" stroke-linecap="null" stroke-linejoin="null" id="svg_10" y2="113.33987" x2="418.40849" y1="76.22876" x1="417.74181" stroke-width="2" fill="none"/>
+  <use id="svg_16" stroke-width="1.11111" xlink:href="#DrawoutDis_V_Close" y="106.26524" x="269.48973" transform="matrix(0.5303800975471537,0,0,0.22003531762249645,101.40984503212576,34.386662710855376) " stroke="#00ff00" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  <use id="svg_17" stroke-width="1.11111" xlink:href="#DrawoutDis_V_Close" y="-79.70658" x="870.94982" transform="matrix(0.5154528378852784,0,0,0.22165123230158573,-91.01505606660294,74.42641457065085) " stroke="#00ff00" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  <text xml:space="preserve" text-anchor="start" font-family="null" font-size="12pt" id="svg_18" y="191" x="132.5" stroke-width="null" stroke="#f7f2f2" fill="#ff0000">1#变压器</text>
+  <use id="svg_19" stroke-width="1.11111" xlink:href="#DrawoutDis_V_Close" y="-0.00637" x="1106.47622" transform="matrix(0.5378428715422994,0,0,0.2161449538897887,-132.2355936343473,59.49845396434544) " stroke="#00ff00" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  <text xml:space="preserve" text-anchor="start" font-family="null" font-size="12pt" id="svg_20" y="191" x="248.5" stroke-width="null" stroke="#f7f2f2" fill="#ff0000">2#变压器</text>
+  <text xml:space="preserve" text-anchor="start" font-family="null" font-size="12pt" id="svg_21" y="191" x="385.5" stroke-width="null" stroke="#f7f2f2" fill="#ff0000">3#变压器</text>
+  <text fill="#ff0000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="178.48763" y="218.5" id="MIID_41" font-size="12pt" font-family="null" text-anchor="middle" xml:space="preserve" transform="matrix(0.7069109082221985,0,0,0.8571428656578064,38.825145626440644,29.28571254014969) " stroke="#f7f2f2">12345678</text>
+  <text fill="#ff0000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="178.09245" y="245.79946" font-size="12pt" font-family="null" text-anchor="middle" xml:space="preserve" transform="matrix(0.7069109082221985,0,0,0.8571428656578064,38.825145626440644,29.28571254014969) " stroke="#f7f2f2" id="MIID_51">12345678</text>
+  <text fill="#ff0000" stroke-width="null" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="178.09245" y="270.29946" font-size="12pt" font-family="null" text-anchor="middle" xml:space="preserve" transform="matrix(0.7069109082221985,0,0,0.8571428656578064,38.825145626440644,29.28571254014969) " stroke="#f7f2f2" id="MIID_61">12345678</text>
+ </g>
+</svg>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+    <bean id="txManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource" ></property>
+    </bean>
+    <tx:advice id="cftxAdvice" transaction-manager="txManager">
+        <tx:attributes>
+            <!-- 事务执行方式 REQUIRED：指定当前方法必需在事务环境中运行， 如果当前有事务环境就加入当前正在执行的事务环境， 如果当前没有事务，就新建一个事务。
+				这是默认值。 -->
+            <tx:method name="save*" propagation="REQUIRED"></tx:method>
+            <tx:method name="insert*" propagation="REQUIRED"></tx:method>
+            <tx:method name="create*" propagation="REQUIRED"></tx:method>
+
+            <!-- 指定当前方法以非事务方式执行操作，如果当前存在事务，就把当前事务挂起，等我以非事务的状态运行完，再继续原来的事务。 查询定义即可
+				read-only="true" 表示只读 -->
+            <tx:method name="get*" propagation="REQUIRED" read-only="true" />
+            <tx:method name="find*" propagation="REQUIRED" read-only="true" />
+            <tx:method name="load*" propagation="REQUIRED" read-only="true" />
+            <tx:method name="count*" propagation="REQUIRED" read-only="true" />
+            <tx:method name="*" propagation="NOT_SUPPORTED" read-only="true" />
+        </tx:attributes>
+    </tx:advice>
+    <aop:config>
+        <!-- 定义切面，在 com.emsc.service.impl.*.*（..） 中执行有关的hibernate session的事务操作 -->
+        <aop:pointcut id="allManagerMethod" expression="execution (* com.yskj.service..*.*(..))" />
+        <aop:advisor advice-ref="cftxAdvice" pointcut-ref="allManagerMethod" order="0" />
+    </aop:config>
+
+    <aop:config>
+        <aop:pointcut id="logPoint"
+                      expression="execution(* com.yskj.service..*.save*(..))
+					or execution(* com.yskj.service..*.update*(..))
+					or execution(* com.yskj.service..*.del*(..))" />
+        <aop:aspect id="asdasd" ref="tableOperationLogAspect">
+            <aop:after method="logArg" pointcut-ref="logPoint" />
+        </aop:aspect>
+
+    </aop:config>
+
+    <tx:annotation-driven transaction-manager="txManager" />
+
+</beans>
